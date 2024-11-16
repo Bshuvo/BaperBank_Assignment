@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>User Profile</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      /* Hide the up/down arrows in number input fields */
+      .no-spinner::-webkit-outer-spin-button,
+      .no-spinner::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="max-w-[1280px] mx-auto">
+      <div
+        class="p-10 w-[80%] h-[70%] bg-gradient-to-r from-blue-200 to-cyan-200 rounded-xl mx-auto mt-10"
+      >
+        <div class="flex items-center flex-col">
+          <img class="w-[100px]" src="images/banklogo.png" alt="" />
+          <h1 class="text-center text-4xl font-bold">BaperBank</h1>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <div
+            class="mt-10 w-[80%] h-[50%] text-center bg-gradient-to-r from-emerald-500 to-emerald-900 p-4 rounded-xl flex flex-col"
+          >
+            <p class="font-bold text-xl">Available Balance</p>
+            <input
+              type="number"
+              class="text-center bg-transparent outline-none no-spinner text-2xl text-white"
+              id="avbalance"
+            />
+          </div>
+
+          <div class="flex gap-2 flex-col items-center w-[100%]">
+            <div
+              class="mt-10 w-[80%] h-[50%] text-center bg-gradient-to-r from-lime-400 to-lime-500 p-4 rounded-xl flex flex-col justify-center items-center gap-3"
+            >
+              <p class="font-bold text-xl">Deposit Amount</p>
+              <input
+                type="number"
+                class="text-center outline-none no-spinner w-[80%] h-12 rounded-lg text-2xl"
+                id="dbalance"
+              />
+              <button
+                class="px-5 py-2 font-bold bg-gradient-to-r from-amber-200 to-yellow-500 rounded-lg"
+                id="dbtn"
+              >
+                Enter
+              </button>
+            </div>
+
+            <div
+              class="mt-10 w-[80%] h-[50%] text-center bg-gradient-to-r from-violet-500 to-purple-500 p-4 rounded-xl flex flex-col justify-center items-center gap-3"
+            >
+              <p class="font-bold text-xl">Withdrawal Amount</p>
+              <input
+                type="number"
+                class="text-center outline-none no-spinner w-[80%] h-12 rounded-lg text-2xl"
+                id="wbalance"
+              />
+              <button
+                class="px-5 py-2 font-bold bg-gradient-to-r from-amber-200 to-yellow-500 rounded-lg"
+                id="wbtn"
+              >
+                Enter
+              </button>
+            </div>
+
+            <h1 class="text-center text-gray-600 underline mt-5">
+              BaperBank by Shuvo
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="profilescript.js"></script>
+  </body>
+</html>

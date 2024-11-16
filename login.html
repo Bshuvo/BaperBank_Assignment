@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <title>BaperBank</title>
+  </head>
+  <body>
+   <div class="max-w-[1280px] m-auto">
+    
+
+    <div
+    class="p-8 md:p-40 mt-10 w-[70%] h-[70%] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ... flex flex-col justify-center rounded-xl m-auto ">
+
+    <div class="mx-auto">
+      <img class=" w-[100px] " src="images/banklogo.png" alt="">
+    </div>
+
+    <h1 class="text-center font-bold text-2xl ">Welcome to BaperBank!</h1>
+
+    <div class="flex flex-col items-center justify-center space-y-6 mt-6">
+      <p class="text-xl">Enter Account Number</p>
+      <input class="h-[2.5rem] w-[70%]  rounded-xl p-2 outline-none" type="text"  id="acc"/>
+      <p class="text-xl">Enter Pin Number</p>
+      <input class="h-[2.5rem] w-[70%]  rounded-xl p-2 outline-none" type="password" id="pin" />
+      <button class="px-6 py-2 bg-lime-200 rounded-xl" id="logbtn">Login</button>
+    </div>
+
+  <h1 class="mt-10 text-center text-gray-600 underline">BaperBank by Shuvo</h1>
+
+  </div>
+
+   </div>
+
+    <script src="loginscript.js"></script>
+  </body>
+</html>
