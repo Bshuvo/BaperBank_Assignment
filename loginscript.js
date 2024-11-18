@@ -7,6 +7,7 @@ document.getElementById("logbtn").addEventListener("click", () => {
   else
   {
     alert("Please enter correct Account Number or Pin !!")
+    alert("AccountNumber->admin,pin->admin")
   }
 
   document.getElementById("acc").value="";
