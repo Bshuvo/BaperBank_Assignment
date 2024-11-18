@@ -4,6 +4,10 @@ document.getElementById("logbtn").addEventListener("click", () => {
   if (accnum === "C223035" && accpin === "C223035" || accnum ==="admin" && accpin ==="admin") {
     window.location.href = "profile.html";
   }
+  else
+  {
+    alert("Please enter correct Account Number or Pin !!")
+  }
 
   document.getElementById("acc").value="";
   document.getElementById("pin").value="";
